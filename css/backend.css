@@ -1,0 +1,71 @@
+/* 
+sinking dropdowns dropdown plugin
+css/stylesheets
+copyright 2013  yonatan reinberg (email : yoni [a t ] s o cia l-ink dot net) - http://social-ink.net
+contact us for forking or other permissions
+*/
+
+/** admin styles **/
+
+.sinking_dropdowns .metabox-holder h3 {
+    font-size: 1.5em;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.sinking_dropdowns .section {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    width: 60%;
+}
+.sinking_dropdowns .hidden_section {
+	display:none;
+	}
+
+.sinking_dropdowns .copyright {
+	font-size:80%;
+}
+
+.sinking_dropdowns .color_mid {
+	margin-left: 5%;
+}
+
+.sinking_dropdowns .color_bottom {
+	margin-left: 10%;
+}
+
+.sinking_dropdowns .color_section {
+    border-left: 2px solid #EEEEEE;
+    float: left;
+    padding-left: 15px;
+}
+
+.sinking_dropdowns .color_section label {
+    display: inline-block;
+    width: 100px;
+}
+
+.sinking_dropdowns .field {
+	margin-bottom:30px;
+}
+.sinking_dropdowns .clearfix {
+	clear:both;
+}
+
+.sinking_dropdowns .introsection input {
+    margin-right: 5px;
+}
+
+.sinking_dropdowns .introsection label {
+    margin-right: 20px;
+}
+
+.sinking_dropdowns input#sinkdropdowns_responsive_break {
+    display: block;
+    margin-left: 0;
+}
+#sinkdropdowns_responsive_break {
+	width:40px;
+}

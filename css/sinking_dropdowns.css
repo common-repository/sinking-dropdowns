@@ -1,0 +1,179 @@
+/* 
+sinking dropdowns dropdown plugin
+css/stylesheets
+copyright 2013-4  yonatan reinberg (email : yoni [a t ] s o cia l-ink dot net) - http://social-ink.net
+contact us for forking or other permissions
+*/
+
+
+/** positioning styles **/	
+
+.sink_dropdown {
+    list-style: none;
+     *zoom: 1;
+     position: relative;
+	 margin: 0;
+}
+.sink_dropdown:before,
+.sink_dropdown:after {
+    content: " ";
+    display: table;
+}
+.sink_dropdown:after {
+    clear: both;
+}
+.sink_dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sink_dropdown a {
+	text-decoration: none;
+    padding: 10px 15px;
+    color:#fff;
+    *zoom: 1;
+}
+.sink_dropdown > li {
+    float: left;
+    z-index: 200;
+}
+.sink_dropdown > li > a {
+    display: block;
+}
+.sink_dropdown li ul {
+    position: absolute;
+    left: -9999px;
+    z-index: 100;
+}
+
+.sink_dropdown li ul li {
+	display: block;
+}
+.sink_dropdown li li a {
+    display: block;
+    position: relative;
+    z-index:100;
+}
+.sink_dropdown li li li a {
+    z-index:200;
+}
+
+.sink_dropdown li {
+    position: relative;
+}
+
+.sink_dropdown li ul.sub-menu {
+	min-width: 180px;
+}
+
+
+/** prefer hover class, not psuedo class so we can use js **/	
+
+.sink_dropdown > li.hover > ul {
+    left: 0;
+}
+.sink_dropdown li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+
+/* for no-js */
+.no-js .sink_dropdown > li:hover > ul {
+    left: 0;
+}
+.no-js .sink_dropdown li li:hover ul {
+    left: 100%;
+    top: 0;
+}
+
+/** visual/graphic styles **/	
+.sink_dropdown_container {
+	
+}
+
+li.sink_dropdown_top, .sink_dropdown li {
+	
+}
+
+	li.sink_dropdown_top a, .sink_dropdown li a {
+		
+	}
+
+li.sink_dropdown_mid, .sink_dropdown li li {
+	margin-right: 0;
+}
+
+	li.sink_dropdown_mid a, .sink_dropdown li li a {
+		
+	}
+	
+li.sink_dropdown_bottom, .sink_dropdown li li li {
+	
+}
+
+	li.sink_dropdown_bottom a, .sink_dropdown li li li a {
+		
+	}
+
+	
+/** applies to all items that have a submenu **/	
+
+.dropdown_triangle {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000000;
+    content: "";
+    display: inline-block;
+    height: 0;
+    vertical-align: top;
+    width: 0;
+}
+
+.sink_dropdown_container .dropdown_triangle {
+ margin-left: 7px;
+   position: absolute;
+   top: 52%;
+}
+
+/* submenu style if there's no js */
+
+.sink_dropdown_container > li > .parent {
+    background-position: 95% 50%;
+}
+.sink_dropdown_container li li .parent {
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+	
+
+@media screen and (max-width: 800px) {
+
+	.sink_dropdown_container {
+		background:red !important;
+	}
+
+		.sink_dropdown > li {
+			float: none;
+		}
+		.sink_dropdown ul {
+			display: block;
+			width: 100%;
+		}
+	   .sink_dropdown > li.hover > ul , .sink_dropdown li li.hover ul {
+			position: static;
+
+		}
+		.sink_dropdown > li > a {
+			display: block;
+		}
+		
+		
+	 .nav > li > .parent {
+			background-position: 95% 50%;
+		}
+		.nav li li .parent {
+			background-image: url("images/downarrow.png");
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+		}
+}	
